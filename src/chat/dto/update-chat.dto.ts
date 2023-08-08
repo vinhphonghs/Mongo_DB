@@ -3,5 +3,5 @@ import { CreateChatDto } from './create-chat.dto';
 
 export class UpdateChatDto extends PartialType(CreateChatDto) {
     updateAt?: Date;
-    // isDelete?: boolean;
+    isDelete?: boolean;
 }

@@ -5,5 +5,5 @@ export class CreateChatDto {
     receiver: string;
     createAt: Date;
     updateAt: Date;
-    // isDelete: boolean;
+    isDelete: boolean;
 }

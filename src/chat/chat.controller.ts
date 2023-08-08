@@ -13,7 +13,7 @@ export class ChatController {
   }
 
   @Get('/getAll')
-  getAll(): Promise<CreateChatDto[]> {
+  getAll() {
     return this.chatService.getAll();
   }
 
@@ -27,7 +27,7 @@ export class ChatController {
     return this.chatService.updateOne(id, updateChatDto);
   }
 
-  @Delete()
+  @Delete('/delete')
   delete(@Param('id') id: string) {
     return this.chatService.deleteOne(id);
   }
