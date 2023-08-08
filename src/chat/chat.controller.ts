@@ -13,7 +13,7 @@ export class ChatController {
   }
 
   @Get('/getAll')
-  getAll() {
+  getAll(){
     return this.chatService.getAll();
   }
 
@@ -22,7 +22,7 @@ export class ChatController {
     return this.chatService.getOne(id);
   }
 
-  @Put()
+  @Put('/put')
   update(@Query('id') id: string, @Body() updateChatDto: UpdateChatDto) {
     return this.chatService.updateOne(id, updateChatDto);
   }
